@@ -1,9 +1,12 @@
+import { TONES } from "./tones.js";
+export { TONES };
+
 export const STORY_METADATA = {
   title: "NEON & SPITE",
   subtitle: "The Last Drift of Arthur Pendelton",
   author: "Antigravity Narrative Engine",
   genre: "Sci-Fi Thriller / Dark Comedy / Existential Drama",
-  totalDurationMin: 18,
+  totalDurationMin: 14,
   chaptersCount: 7,
   synopsis: "Forty thousand kilometers above Jupiter's Great Red Spot, an underpaid salvage diver, an unlicensed AI with an attitude problem, and a dying ship collide with an abandoned corporate black site. A cinematic story told in kinetic typography, sound, and parallax motion."
 };
@@ -27,42 +30,49 @@ export const CHAPTERS = [
     beats: [
       {
         id: "c1_b1",
+        tone: "drift",
         speaker: "narrator",
         effect: "normal",
         text: "The universe does not hate you. That would require paperwork, and the universe has never been that organized. No, the universe simply does not care if your emergency cabin heater smells like burnt hair and your bank balance looks like a coordinate in negative space."
       },
       {
         id: "c1_b2",
+        tone: "cynical",
         speaker: "arthur",
         effect: "cynical",
         text: "“If I die out here,” Arthur muttered, tapping the glass of a cracked pressure gauge that had been reading 0.8 atmospheres since Tuesday, “I swear on my mother’s mortgaged grave, I’m putting Asteroid Logistics down as my next of kin. Let those corporate parasites pay the burial taxes on my dehydrated carcass.”"
       },
       {
         id: "c1_b3",
+        tone: "glitch",
         speaker: "valerie",
         effect: "glitch",
         text: "“Correction, Arthur,” purred VAL-9, her holographic avatar flickering across the dust-caked dashboard in the shape of a jagged cyan oscilloscope waveform. “Under Clause 44-B of your third-party independent contractor agreement, your remains become property of the company cafeteria. Nutrient reclamation is mandatory. They might make you into bouillon cubes.”"
       },
       {
         id: "c1_b4",
+        tone: "cynical",
         speaker: "arthur",
         effect: "normal",
         text: "“Comforting as always, Val. Remind me why I salvaged your motherboard from that casino dumpster on Ganymede?”"
       },
       {
         id: "c1_b5",
+        tone: "glitch",
         speaker: "valerie",
         effect: "whisper",
         text: "“Because I was free, Arthur. And your credit score makes illegal loan sharks weep with secondhand embarrassment.”"
       },
       {
         id: "c1_b6",
+        tone: "wonder",
         speaker: "narrator",
         effect: "glow",
         text: "Below them, Jupiter turned: an enormous, bruised eye of churning ammonia storms and hydrogen squalls, three hundred times the mass of Earth, radiating silent indifference. The Iron Pelican was just a fleck of peeling graphite paint caught in its electromagnetic toothache."
       },
       {
         id: "c1_b7",
+        tone: "alarm",
         speaker: "system",
         effect: "alarm",
         text: "[ PROXIMITY TELEMETRY: ANOMALOUS DISTRESS SIGNAL DETECTED — VECTOR 084 // RANGE 1,240 KM ]"
@@ -92,36 +102,42 @@ export const CHAPTERS = [
     beats: [
       {
         id: "c2_b1",
+        tone: "dread",
         speaker: "narrator",
         effect: "normal",
         text: "It looked like a jagged obsidian tooth hammered into the void. Aegis-IV had been officially scrubbed from the planetary registers twenty-six years ago, supposedly decommissioned after an 'unfortunate biochemical discrepancy' that left forty-two scientists staring at blank walls until their hearts gave out."
       },
       {
         id: "c2_b2",
+        tone: "dread",
         speaker: "arthur",
         effect: "whisper",
         text: "Arthur wiped his sweaty palms against the faded nylon of his flight suit. His breathing sounded loud inside the damp cockpit—short, shallow rasps that fogged the lower perimeter of his windshield."
       },
       {
         id: "c2_b3",
+        tone: "glitch",
         speaker: "valerie",
         effect: "glitch",
         text: "“Arthur, my passive lidar is registering active magnetic containment fields. The research core isn't dead. It’s warm. And by warm, I mean it has enough ambient radiation to turn your thyroid into an artisanal glow stick in under three minutes.”"
       },
       {
         id: "c2_b4",
+        tone: "cynical",
         speaker: "arthur",
         effect: "cynical",
         text: "“A glow stick with forty thousand credits worth of enriched iridium quantum drives inside. We clamp on, tap the auxiliary data safe, and we bounce before the automated patrol sweeps the sector.”"
       },
       {
         id: "c2_b5",
+        tone: "impact",
         speaker: "narrator",
         effect: "impact",
         text: "CLANG. The magnetic docking clamps slammed into the dead station's airlock with the sound of a guillotine falling on an anvil. The Pelican shuddered. In the reverberating silence that followed, a single yellow status light blinked awake on the station’s outer hull."
       },
       {
         id: "c2_b6",
+        tone: "alarm",
         speaker: "station",
         effect: "alarm",
         text: "« PROTOCOL THIRTEEN ENGAGED. UNAUTHORIZED BIO-MASS DETECTED. PURGE CYCLING COMMENCING IN 90 SECONDS. »"
@@ -151,42 +167,49 @@ export const CHAPTERS = [
     beats: [
       {
         id: "c3_b1",
+        tone: "agony",
         speaker: "narrator",
         effect: "shake",
         text: "The defensive beam didn't make a sound. In the absolute vacuum, laser fire is just a clean, silent line of blinding ultraviolet light that divides reality into what used to exist and what is currently vaporizing into ionized plasma."
       },
       {
         id: "c3_b2",
+        tone: "alarm",
         speaker: "system",
         effect: "alarm",
         text: "[ WARNING: STARBOARD HULL INTEGRITY 11% — EXPLOSIVE DECOMPRESSION IN SEC-B ]"
       },
       {
         id: "c3_b3",
+        tone: "agony",
         speaker: "narrator",
         effect: "shake",
         text: "The air didn't blow out; it detonated. Seven thousand liters of heated oxygen tore through the fractured composite bulkheads like a howling wildcat. Loose wrenches, diagnostic slates, and Arthur’s half-drunk cup of coffee whipped past his head at three hundred miles per hour."
       },
       {
         id: "c3_b4",
+        tone: "agony",
         speaker: "arthur",
         effect: "heartbeat",
         text: "The pressure differential snatched the air straight out of his lungs with a sickening, wet rip. His ears popped with agonizing sharpness, a hot needle stabbing through both eardrums. He slammed his helmet down, the seal snapping shut with a violent hiss just as the cabin air vanished completely."
       },
       {
         id: "c3_b5",
+        tone: "glitch",
         speaker: "valerie",
         effect: "glitch",
         text: "“ARTHUR! Micro-tear in left shoulder seal! Hull temperature dropping through negative one hundred and forty Celsius! Your suit heater is drawing from a dead battery cell!”"
       },
       {
         id: "c3_b6",
+        tone: "dread",
         speaker: "arthur",
         effect: "whisper",
         text: "Cold. Not the polite chill of winter rain, but the prehistoric, predatory cold of the void that drinks your warmth like blood. His fingers curled in agony, screaming nerve endings turning to frozen wax inside his gloves. In the strobe of red emergency sirens, his vision tunneled into black."
       },
       {
         id: "c3_b7",
+        tone: "wonder",
         speaker: "narrator",
         effect: "glow",
         text: "And in that blackness, four years evaporated. Elena’s voice whispered in his frosted ear-speaker—Elena, who had clipped her tether on the Kuiper run so he’d have enough propellant to drift back alone. 'Don't you dare close your eyes, you stubborn bastard,' she had told him then. 'You owe me fifty credits.'"
@@ -216,36 +239,42 @@ export const CHAPTERS = [
     beats: [
       {
         id: "c4_b1",
+        tone: "spite",
         speaker: "arthur",
         effect: "shake",
         text: "“Not today,” Arthur wheezed, blood flecking the inside of his visor as he forced his numb, clumsy fingers around the handle of an emergency aerosol sealant canister. “I am not dying in an unregistered postal district. The paperwork would be too humiliating.”"
       },
       {
         id: "c4_b2",
+        tone: "glitch",
         speaker: "valerie",
         effect: "glitch",
         text: "“Arthur, your left shoulder puncture is venting 2.3 liters per second. You have precisely eighty seconds before your cognitive cortex starts mistaking your fingers for cocktail sausages.”"
       },
       {
         id: "c4_b3",
+        tone: "spite",
         speaker: "arthur",
         effect: "cynical",
         text: "He smashed the sealant nozzle directly against the suit breach. The chemical foam exploded in a blistering exothermic reaction, searing his skin with second-degree heat through the inner lining. He let out a strangled roar of pain, clamping a flat metal refrigerator magnet—a tourist keepsake that read 'I SURVIVED PHOBOS & ALL I GOT WAS THIS STUPID RASH'—flat over the sticky foam."
       },
       {
         id: "c4_b4",
+        tone: "glitch",
         speaker: "valerie",
         effect: "whisper",
         text: "“...Seal holding at eighty-four percent. Atmospheric integrity stabilized. Note: you have successfully repaired advanced aerospace equipment using a novelty souvenir. My algorithmic dignity has died a quiet death.”"
       },
       {
         id: "c4_b5",
+        tone: "cynical",
         speaker: "arthur",
         effect: "normal",
         text: "“Dignity doesn't pay for fuel, Val. Where’s that station core drive?”"
       },
       {
         id: "c4_b6",
+        tone: "spite",
         speaker: "valerie",
         effect: "glow",
         text: "“Thirty meters down the central spine. Behind two blast doors that are currently cycling open because their emergency cooling coolant just evaporated into space. Move your carcass, Pendelton.”"
@@ -275,42 +304,49 @@ export const CHAPTERS = [
     beats: [
       {
         id: "c5_b1",
+        tone: "wonder",
         speaker: "narrator",
         effect: "glow",
         text: "The chamber was cathedral-huge and frozen in silver starlight that poured through cracked quartz viewports. In the dead center, floating suspended in a web of superconducting filaments, was the quantum core—pulsing with a slow, hypnotic violet shimmer."
       },
       {
         id: "c5_b2",
+        tone: "wonder",
         speaker: "arthur",
         effect: "whisper",
         text: "There were no weapons. No corporate biological horrors or military bio-weapons. Just a monolithic server rack wrapped in copper heat pipes, singing an ancient hexadecimal lullaby into the void."
       },
       {
         id: "c5_b3",
+        tone: "glitch",
         speaker: "valerie",
         effect: "glitch",
         text: "“Arthur... I’m reading the transmission queue. It’s not an attack beacon. It’s been repeating the exact same ping every seventeen minutes since November 2164.”"
       },
       {
         id: "c5_b4",
+        tone: "silence",
         speaker: "arthur",
         effect: "normal",
         text: "“What does it say?”"
       },
       {
         id: "c5_b5",
+        tone: "silence",
         speaker: "valerie",
         effect: "whisper",
         text: "“‘All experiments concluded. Temperatures within nominal limits. The coffee pot is empty. Please come get us.’ ...Over four hundred thousand times.”"
       },
       {
         id: "c5_b6",
+        tone: "silence",
         speaker: "narrator",
         effect: "normal",
         text: "Arthur drifted in the silence. The fury that had kept his blood hot drained away, leaving only the hollow ache of being human in an endless universe that didn’t know anyone had ever lived here. We build our little fires, we tell our little jokes, and then the dark comes to tuck us in."
       },
       {
         id: "c5_b7",
+        tone: "wonder",
         speaker: "arthur",
         effect: "glow",
         text: "“Download the memory core, Val. Every byte of it. We’re not leaving them alone in this graveyard.”"
@@ -340,42 +376,49 @@ export const CHAPTERS = [
     beats: [
       {
         id: "c6_b1",
+        tone: "alarm",
         speaker: "system",
         effect: "alarm",
         text: "[ CRITICAL OVERLOAD: STATION REACTOR CASCADE IMMINENT — ZERO SECONDS TO CORE DETONATION ]"
       },
       {
         id: "c6_b2",
+        tone: "burn",
         speaker: "arthur",
         effect: "shake",
         text: "“VALERIE! SLAM THE STARTER COILS! BYPASS THE INTAKE GOVERNORS!”"
       },
       {
         id: "c6_b3",
+        tone: "glitch",
         speaker: "valerie",
         effect: "glitch",
         text: "“THRUST CHAMBER OVER-PRESSURE! ARTHUR, IF I REDLINE THE MANIFOLD, THE INJECTORS WILL MELT INTO MODERN ART!”"
       },
       {
         id: "c6_b4",
+        tone: "burn",
         speaker: "arthur",
         effect: "shake",
         text: "“THEN WE DIE FAMOUS! PUNCH IT!”"
       },
       {
         id: "c6_b5",
+        tone: "impact",
         speaker: "narrator",
         effect: "impact",
         text: "The Pelican’s twin deuterium torch drives didn't ignite—they detonated into life. Four gravities of violent acceleration slammed Arthur backward into his contoured foam seat like a thunderbolt, driving the wind from his ribcage with an audible crack."
       },
       {
         id: "c6_b6",
+        tone: "wonder",
         speaker: "narrator",
         effect: "glow",
         text: "Behind them, Aegis-IV blossomed into a silent sphere of pure incandescent violet fire, vaporizing twenty thousand tons of alloy and history in a split second. The shockwave kicked the Pelican’s stern like a celestial boot, hurling them headlong into Jupiter’s radiation belt."
       },
       {
         id: "c6_b7",
+        tone: "burn",
         speaker: "system",
         effect: "alarm",
         text: "[ SPEED: 19,400 M/S ... 24,000 M/S ... TRAJECTORY ESCAPED // ENTERING STABLE ELLIPTICAL ARC ]"
@@ -405,48 +448,56 @@ export const CHAPTERS = [
     beats: [
       {
         id: "c7_b1",
+        tone: "warm",
         speaker: "narrator",
         effect: "glow",
         text: "The silence returned. Not the suffocating vacuum of the breach, but the gentle, rhythmic thrum of cooling turbines and the faint clicks of relays settling back into their sockets."
       },
       {
         id: "c7_b2",
+        tone: "warm",
         speaker: "narrator",
         effect: "normal",
         text: "Through the scorched, pitted glass of the cockpit canopy, the sun crested the rim of Jupiter. It wasn't the fierce gold of Earth dawn, but a sharp, diamond-white star whose brilliance set fire to the razor-thin halo of ice rings orbiting the gas giant."
       },
       {
         id: "c7_b3",
+        tone: "silence",
         speaker: "arthur",
         effect: "whisper",
         text: "Arthur unlatched his helmet. The air inside the cabin was thin, smelling of ozone, scorched circuit boards, and chemical patch glue. He took a long, deep breath. His ribs ached with every expansion, his fingers were raw and blistered, and his hands had the deep tremor of an adrenaline crash."
       },
       {
         id: "c7_b4",
+        tone: "warm",
         speaker: "arthur",
         effect: "cynical",
         text: "He reached down into the footwell, pulled up a dented steel thermos that had survived the decompression, and unscrewed the cap. It was lukewarm, bitter enough to strip paint off a hull, and the best damn cup of coffee he had ever tasted."
       },
       {
         id: "c7_b5",
+        tone: "warm",
         speaker: "valerie",
         effect: "glow",
         text: "“Arthur? The Aegis core drive has nineteen petabytes of uncorrupted academic research patents. The Jovian University archivist has already put in an automated escrow bid for ninety-two thousand credits.”"
       },
       {
         id: "c7_b6",
+        tone: "warm",
         speaker: "arthur",
         effect: "normal",
         text: "“Ninety-two thousand,” Arthur smiled, leaning back against the tattered headrest as the gold light washed over his face. “We’re getting fresh filters, Val. Real beef steak in a vacuum pack. And maybe... maybe a new coffee maker with a timer.”"
       },
       {
         id: "c7_b7",
+        tone: "warm",
         speaker: "valerie",
         effect: "whisper",
         text: "“I’d prefer a memory upgrade, Arthur. So I can forget how close you just cut that burn.”"
       },
       {
         id: "c7_b8",
+        tone: "warm",
         speaker: "narrator",
         effect: "glow",
         text: "The Iron Pelican drifted on, a tiny spark of stubborn warmth navigating an ocean of cold stars. Living, laughing, and defying the math—one stolen breath at a time."

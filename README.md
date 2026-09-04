@@ -1,6 +1,6 @@
 # 🌌 VOX HORIZON // The Kinetic Storyteller
 > **"NEON & SPITE: The Last Drift of Arthur Pendelton"**  
-> *An audio-visual linear & sidescrolling narrative experience.*
+> *A self-paced kinetic novella with a tone-reactive stage and procedural soundscape.*
 
 ---
 
@@ -23,28 +23,20 @@
 
 ## 🚀 Key Features
 
-- **Panoramic Sidescrolling Canvas:**
-  - Continuous horizontal layout with smooth scroll-snap, mouse wheel lateral translation, and drag support.
-  - Perspective parallax depth layers: deep cosmic stars, drifting space dust, micro-meteorites, and Jovian cloud bands.
-- **Audible-Inspired Playback Dock:**
-  - One-click auto-play engine with smooth camera tracking.
-  - Skip forward / backward buttons, speed toggle (0.75x – 2.0x), and story progress track with chapter milestones.
-- **Dual Presentation Modes:**
-  - **Panoramic Sidescroller:** Explore the story laterally with parallax depth and kinetic scene cards.
-  - **Cinematic Theatre:** Centered widescreen focus mode (2.39:1 ratio) with dynamic animated dialogue frames.
-- **Procedural Web Audio Synthesizer:**
-  - Zero external sound dependencies!
-  - Real-time evolving ambient drone and resonant sub-bass.
-  - Dynamic Heartbeat engine that shifts from calm (64 BPM) to agony/panic (155 BPM) based on narrative tension.
-  - Procedural SFX (glitch bursts, proximity alarms, decompression whooshes, and sub-bass impacts).
-- **Web Speech API Narration Engine:**
-  - Synchronized character speech with pitch modulation (Arthur is gritty and low; Valerie-9 is crisp and glitched).
-  - Word-by-word boundary tracking with dynamic glowing text highlights.
-- **Kinetic Typography & Visual Effects:**
-  - Text shake for impacts, RGB chromatic aberration for AI glitches, glowing drop-caps, and heartbeat scale pulses.
-  - Interactive "Black Box" terminals to inspect encrypted corporate logs and telemetry.
-
----
+- **Stage View (default):**
+  - One story beat at a time in large kinetic type, with a colour-coded speaker nameplate and chapter title cards between arcs.
+  - Reading-pace autoplay: each beat is held for as long as it takes to read (pace adjustable 0.75x – 2x), then the story advances. No spoken audio.
+  - A filmstrip timeline above the dock shows every beat, coloured by speaker; click any cell to jump.
+- **Panorama View:**
+  - The whole story laid out as cards on a sidescrolling strip with parallax depth. Wheel, drag, or use the edge chevrons.
+- **Tone-Reactive Background:**
+  - Every beat carries a tone tag (dread, alarm, spite, wonder, burn, warm...). The nebula colour, particle style, pulse and impact flashes follow it.
+- **Procedural Web Audio Soundscape:**
+  - Zero external sound files. Evolving drone, resonant sub-bass, wind, and a heartbeat that tracks chapter tension (64 – 155 BPM).
+  - Procedural SFX for alarms, AI glitches, impacts and chapter transitions.
+- **First-Run Walkthrough:**
+  - A Discord-style spotlight tour explains what the app is and every control. Shown once, replayable from the ? button.
+- **Black Box Logs:** hidden lore slates per chapter.
 
 ## 🛠️ Quick Start
 
@@ -63,9 +55,10 @@ npm run preview
 ```
 
 ### Keyboard Shortcuts:
-- **`Space`**: Play / Pause storytelling
+- **`Space`**: Play / Pause
 - **`→` / `←`**: Next / Previous story beat
-- **`M`**: Mute / Unmute ambient synthesizer & SFX
-- **`V`**: Toggle Web Speech voice narration
-- **`T`**: Switch between Sidescroll and Theatre view
-- **`Esc`**: Close popups and black box drawers
+- **`C`**: Chapter list
+- **`T`**: Toggle Stage / Panorama view
+- **`M`**: Mute / Unmute the soundscape
+- **`?`**: Help & walkthrough
+- **`Esc`**: Close any panel

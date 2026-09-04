@@ -1,23 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import StoryCard from "./StoryCard";
 import ChapterIntroCard from "./ChapterIntroCard";
-import { 
-  ChevronLeft, 
-  ChevronRight, 
-  Play, 
-  BookOpen, 
-  Headphones, 
-  Radio, 
-  RotateCcw,
-  Sparkles
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, Headphones, RotateCcw } from "lucide-react";
 
-export default function SidescrollStoryView({
+export default React.memo(function SidescrollStoryView({
   chapters,
   currentChapterIndex,
   currentBeatIndex,
-  isSpeaking,
-  activeCharIndex,
   onSelectChapterAndBeat,
   onOpenLog,
   onScrollProgressChange,
@@ -112,7 +101,7 @@ export default function SidescrollStoryView({
       {/* Main Horizontal Scroller */}
       <div
         ref={containerRef}
-        className="w-full flex items-center gap-6 sm:gap-8 md:gap-10 overflow-x-auto overflow-y-hidden px-8 sm:px-16 md:px-24 py-8 scroll-smooth no-scrollbar"
+        className="w-full flex items-center gap-6 sm:gap-8 md:gap-10 overflow-x-auto overflow-y-hidden px-8 sm:px-16 md:px-24 py-8 no-scrollbar"
         style={{ scrollSnapType: "x proximity" }}
       >
         {/* Prologue Welcome Hero Card */}
@@ -131,7 +120,7 @@ export default function SidescrollStoryView({
                 AUDIO-VISUAL NOVELLA
               </span>
               <span className="text-xs font-mono text-slate-400">
-                EST. DURATION: ~18 MIN
+                EST. DURATION: ~14 MIN
               </span>
             </div>
 
@@ -157,12 +146,12 @@ export default function SidescrollStoryView({
               className="flex items-center gap-2.5 px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-semibold shadow-lg shadow-sky-500/25 transition-all hover:scale-105"
             >
               <Play className="w-4 h-4 fill-white" />
-              <span>START STORYTELLING</span>
+              <span>BEGIN TRANSMISSION</span>
             </button>
 
             <div className="text-xs font-mono text-slate-400 flex items-center gap-2">
               <Headphones className="w-4 h-4 text-sky-400" />
-              <span>HEADPHONES RECOMMENDED</span>
+              <span>HEADPHONES RECOMMENDED · NO SPOKEN AUDIO</span>
             </div>
           </div>
         </div>
@@ -198,8 +187,6 @@ export default function SidescrollStoryView({
                     beat={beat}
                     chapter={chapter}
                     isActive={isCurrentBeat}
-                    isSpeaking={isSpeaking}
-                    activeCharIndex={isCurrentBeat ? activeCharIndex : -1}
                     onSelectBeat={() => onSelectChapterAndBeat(cIdx, bIdx)}
                     onOpenLog={onOpenLog}
                   />
@@ -251,4 +238,4 @@ export default function SidescrollStoryView({
       </div>
     </div>
   );
-}
+});

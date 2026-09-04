@@ -45,7 +45,7 @@ export default function ChapterDrawer({
                 className={`p-4 rounded-xl border cursor-pointer transition-all duration-200 flex items-center justify-between gap-4 ${
                   isCurrent
                     ? "bg-sky-500/15 border-sky-500/50 ring-1 ring-sky-500/30"
-                    : "bg-slate-900/60 hover:bg-slate-850 border-white/5 hover:border-slate-700"
+                    : "bg-slate-900/60 hover:bg-slate-800/70 border-white/5 hover:border-slate-700"
                 }`}
               >
                 <div className="flex items-center gap-3.5 min-w-0">
@@ -96,7 +96,7 @@ export default function ChapterDrawer({
 
         {/* Footer */}
         <div className="mt-6 pt-4 border-t border-white/10 flex justify-between items-center text-xs font-mono text-slate-400">
-          <span>7 CHAPTERS // 47 STORY BEATS</span>
+          <span>{chapters.length} CHAPTERS // {chapters.reduce((n, c) => n + c.beats.length, 0)} STORY BEATS</span>
           <button
             onClick={onClose}
             className="px-4 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition"
